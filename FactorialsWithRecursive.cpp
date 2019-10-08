@@ -27,9 +27,16 @@ int main()
 
 int factorials(int factorial)
 {
+    /*
     // if factorials == 0 simply return 1
     if (factorial == 0)
         return 1;
+    */
+    
+    // NEW REPLACEMENT
+    if (factorial == 1) {
+        return factorial;
+    }
     
     // otherwise keep calling this function using currentNumber - 1
     return factorial * factorials(factorial - 1);
